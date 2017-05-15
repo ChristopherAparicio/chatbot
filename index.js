@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.post('/hello',function(req,res){
+	console.log(req);
 	return res.json({
 		speech:"Hello",
 		displayText:"World",
